@@ -11,7 +11,7 @@ function ContactUs() {
     })
 
     const sendData = () =>{
-        axios.post('http://localhost:8000/contact-us',data).then((val)=>{
+        axios.post('https://earthspices.onrender.com/contact-us',data).then((val)=>{
             console.log('val :>> ', val);
             toast.success(val?.data?.message)
             setData({

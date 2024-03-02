@@ -15,7 +15,7 @@ function Products() {
 
     
     const getData =() =>{
-        axios.get(`http://localhost:8000/viewall?category=${category}`).then((val)=>{
+        axios.get(`https://earthspices.onrender.com/viewall?category=${category}`).then((val)=>{
             console.log('val :>> ', val?.data?.spices);
             setData(val?.data?.spices)
         }).catch((err)=>{
